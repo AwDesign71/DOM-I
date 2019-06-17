@@ -47,3 +47,9 @@ const links = document.querySelectorAll('a');
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//h1 tag
+const headerOne = document.querySelector('h1');
+headerOne.textContent = siteContent["cta"]["h1"];
+//Adding the cta button
+const ctaBtn = document.querySelector('button');
+ctaBtn.textContent = "Get Started";

@@ -53,3 +53,15 @@ headerOne.textContent = siteContent["cta"]["h1"];
 //Adding the cta button
 const ctaBtn = document.querySelector('button');
 ctaBtn.textContent = "Get Started";
+//Updating the IDs set images.
+/* const headerLogo = document.querySelector('#cta-img');
+headerLogo.src = '../img/header-img.png'; */
+const headerLogo = document.getElementById('cta-img');
+headerLogo.setAttribute('src', siteContent["cta"]["img-src"]);
+//Adding main-content feature h4 to the page
+
+
+
+
+
+

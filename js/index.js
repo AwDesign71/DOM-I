@@ -59,8 +59,17 @@ headerLogo.src = '../img/header-img.png'; */
 const headerLogo = document.getElementById('cta-img');
 headerLogo.setAttribute('src', siteContent["cta"]["img-src"]);
 //Adding main-content feature h4 to the page
-
-
+const aboutHtag = document.querySelectorAll('.main-content h4');
+aboutHtag[1].textContent = siteContent["main-content"]["about-h4"];
+//Adding p content of the main
+const aboutContent = document.querySelectorAll('.main-content .text-content p');
+aboutContent[1].textContent = siteContent["main-content"]["about-content"];
+/* const middleImg = document.querySelector('#middle-img');
+middleImg.src = '../img/mid-page-accent.jpg'; */
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+//This will be the area for the three column layout.
+// Services h4 tag
 
 
 

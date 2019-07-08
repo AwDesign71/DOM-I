@@ -58,12 +58,12 @@ newLink.setAttribute('href', '#');
 const navTag = document.querySelector('nav');
 navTag.appendChild(newLink);
 //Prepending Sales
-const firstLink = document.createElement('a');
+ const firstLink = document.createElement('a');
 const aText = document.createTextNode('Sales');
 firstLink.prepend(aText);
 firstLink.setAttribute('href', '#');
-const firstTag = document.querySelector('nav');
-firstTag.prepend(firstLink);
+/*const firstTag = document.querySelector('nav'); */
+navTag.prepend(firstLink);
  // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
